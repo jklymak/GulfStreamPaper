@@ -1,0 +1,57 @@
+\documentclass{beamer}
+\usepackage[orientation=portrait,size=custom,width=11.05,height=9.0]{beamerposter}
+
+\usetheme{Boadilla}
+\usepackage{comment}
+\usepackage{graphicx}
+\graphicspath{{../mvp/doc/},{../doc/figs/},{../Nest/doc/},}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm} % Horizontale Einheit
+\setlength{\TPVertModule}{1cm} % Ve
+\usepackage{tikz}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols    
+
+\begin{document} 
+\begin{frame}[plain,t]{}
+	% 	top set of figures
+%	\begin{columns}
+%		\begin{column}{\textwidth}
+%		\centering  
+%			\includegraphics[width=0.95\textwidth,trim=0 10 15 20,clip=true]{SalDFirstStreamer.pdf}
+%		
+%%			\includegraphics[width=\textwidth]{SalDFirstStreame}
+%   
+%%			\includegraphics[width=\textwidth]{SalDFirstStreamer}
+%		\end{column}
+%	\end{columns}
+	\centering
+	\definecolor{boxcol}{gray}{0.89}
+	\begin{textblock}{10}(1.2,1.5)
+		%\fcolorbox{black}{boxcol}{
+			\begin{minipage}{\textwidth}
+			\includegraphics[width=\textwidth]{IsoSurface.pdf}
+			\end{minipage}
+		%}
+	\end{textblock}%
+	
+
+	\begin{textblock}{5.5}(0.1,0.)
+		%\fcolorbox{black}{boxcol}{%
+			\begin{minipage}{\textwidth}
+			\includegraphics[width=\textwidth,trim=0 0 15 0,clip=True]{TSDensityplot.pdf}
+			\end{minipage}
+		%}
+	\end{textblock}%
+%\centering
+%			\includegraphics[width=0.5\textwidth]{TSDensityplot.pdf}\\
+%			\includegraphics[width=0.7\textwidth]{IsoSurface.pdf}
+	% bottom set of figures.
+%\includegraphics[width=\textwidth]{IsoSurface.pdf}
+	
+
+\end{frame}
+	
+\end{document}
+
+
