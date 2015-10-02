@@ -1,5 +1,5 @@
 \documentclass{beamer}
-\usepackage[orientation=portrait,size=custom,width=11.05,height=9.0]{beamerposter}
+\usepackage[orientation=portrait,size=custom,width=11.05,height=11.65]{beamerposter}
 
 \usetheme{Boadilla}
 \usepackage{comment}
@@ -11,7 +11,6 @@
 \usepackage{tikz}
 
 \setbeamertemplate{navigation symbols}{}%remove navigation symbols    
-
 \begin{document} 
 \begin{frame}[plain,t]{}
 	% 	top set of figures
@@ -35,13 +34,19 @@
 		%}
 	\end{textblock}%
 	
-
-	\begin{textblock}{5.5}(0.1,0.)
-		%\fcolorbox{black}{boxcol}{%
+	\begin{textblock}{4.9}(0.1,0.)
+		\fcolorbox{white}{white}{%
 			\begin{minipage}{\textwidth}
-			\includegraphics[width=\textwidth,trim=0 0 15 0,clip=True]{TSDensityplot.pdf}
+			\includegraphics[width=1.065\textwidth,trim=0 0 15 0,clip=True]{TSDensityplot.pdf}
 			\end{minipage}
-		%}
+		}
+	\end{textblock}%
+    \begin{textblock}{10}(0.90,8.5)
+		\fcolorbox{white}{white}{%
+			\begin{minipage}{\textwidth}
+			\includegraphics[width=1.052\textwidth,trim=0 0 15 0,clip=True]{FrontWidth.pdf}
+			\end{minipage}
+		}
 	\end{textblock}%
 %\centering
 %			\includegraphics[width=0.5\textwidth]{TSDensityplot.pdf}\\
