@@ -201,7 +201,7 @@
 
 \altaffiltext{1}{University of Victoria, Victoria, British Columbia, Canada}
 \altaffiltext{2}{Oregon State University, Corvallis, Oregon, USA}
-\altaffiltext{3}{Laboratoire de Physique des Oc\'eans, Universit\'e de Bretagne Occidentale}
+\altaffiltext{3}{Laboratoire d'Oc\'eanographie Physique et Spatiale, Universit\'e de Brest, Brest, France}
 \altaffiltext{4}{Applied Physics Laboratory, University of Washington, Seattle, Washington USA}
 \altaffiltext{5}{Stanford University, Stanford, California, USA}
 \altaffiltext{6}{University of Massachusetts Dartmouth, Dartmouth, Massachusetts, USA}
@@ -214,7 +214,7 @@
 %
 %  ABSTRACT
 %
-%% ------------------------------------------------------------------------ %%
+%% -------------------------------------------s---------------------------- %%
 
 % >> Do NOT include any \begin...\end commands within
 % >> the body of the abstract.
@@ -283,8 +283,7 @@ At select times during the float evolutions, fluorescein dye releases (100 kg pe
 
 Numerical simulations of the GS were performed with the Regional Oceanic Modeling System \citep[ROMS][]{shchepetkinmcwilliams05}. The simulation has a horizontal resolution of 500m and 50 vertical levels. The model domain spans 1,000 km by 800 km and covers a region of the GS downstream from its separation from the U.S. continental slope. Boundary conditions are supplied by a sequence of two lower-resolution simulations that span the entire GS region and the Atlantic basin, respectively. The simulation is forced by daily winds and diurnally modulated surface fluxes. The modelling approach is described in detail in \citet{gulaetal15}.
 
-Neutrally buoyant Lagrangian (flow-following) particles were seeded into the model at a time $t0$ and advected both backwards and forwards in time by the model velocity fields without additional dispersion from the model's mixing processes \citep{gulaetal14}. A 4th-order Runge-Kutta method with a  time step  $dt = 1\ \mathrm{s}$ is used to compute particle advection. Velocity and tracer fields are interpolated at the positions of the particles using cubic spline interpolation in both the horizontal and vertical directions.  We use hourly outputs from the simulation to get sufficiently frequent and temporally-smooth velocity sampling for accurate parcel advection.
-
+Neutrally buoyant Lagrangian (flow-following) particles were seeded into the model at a time $t0$ and advected both backwards and forwards in time by the model velocity fields without additional dispersion from the model's mixing processes \citep{gulaetal14}. A 4th-order Runge-Kutta method with a time step  $dt = 1\ \mathrm{s}$ is used to compute particle advection. Velocity and tracer fields are interpolated at the positions of the particles using cubic spline interpolation in both the horizontal and vertical directions.  We linearly interpolate hourly outputs in time from the simulation to get sufficiently frequent and temporally-smooth velocity sampling for accurate parcel advection.
 
 \section{Observations}
 
